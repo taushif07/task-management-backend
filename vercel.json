@@ -1,0 +1,17 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "app.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      { "src": "/todos", "dest": "app.js" },
+      { "src": "/api/*", "dest": "app.js" }
+    ],
+    "env": {
+      "MONGO_URL": "mongodb+srv://taushif07:FYzrGf79gm98EKc7@cluster0.bonshpl.mongodb.net/Tasks?retryWrites=true&w=majority"
+    }
+  }
+  
